@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #000000;
+      color: #ff0000;
+      scroll-behavior: smooth;
+      padding-top: 70px;
+    }
+
+    .navbar, .footer {
+      background-color: #141414;
+    }
+
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .nav-link:hover {
+      color: #ff0000 !important;
+    }
+
+    #profile {
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 400px;
+      color: rgb(255, 0, 0);
+    }
+
+    #profile .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background-color: #ff0000;
+      border: none;
+      color: #000000;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-primary {
+      background-color: #ff0000;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    .footer {
+      padding: 40px 0 10px;
+    }
+
+    input, textarea {
+      background-color: #292929 !important;
+      border: none;
+      color: #fff !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Shawn Kent Prades</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#profile">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Shawn Kent Prades</h1>
+      <p class="lead">This is my Portfolio</p>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <img src="myimage.png" class="rounded-circle img-fluid mb-3" style="max-width: 300px;">
+      <h1>Shawn Kent Prades</h1>
+      <h2>IT Student</h2>
+      <p class="mt-3 mx-auto" style="max-width: 700px;"></p>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Here's my Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="project1.png" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Park Wise</h5>
+              <p class="card-text">A app that helps you to park hastle free.</p>
+              <a href="#" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="1117_arduino_uno_overview_820.png" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Smart Watering System</h5>
+              <p class="card-text">Using a arduino UNO it will smartly water and care your plant.</p>
+              <a href="#" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="project3.png" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Figma Portfolio</h5>
+              <p class="card-text">We used Figma to create the portfolio design.</p>
+              <a href="#" class="btn btn-primary mt-auto">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-black " >
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer text-center text-light">
+    <div class="container">
+      <p>&copy; 2025 Shawn Kent Prades</p>
+      <p><small>All rights reserved.</small></p>
+    </div>
+  </footer>
+
+  <!-- Required Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vanta.js + Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+  <script>
+    VANTA.WAVES({
+      el: "#profile",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 100.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0000000,
+      shininess: 50.00,
+      waveHeight: 20.00,
+      waveSpeed: 0.50,
+      zoom: 0.85
+    });
+  </script>
+
+</body>
+</html>
